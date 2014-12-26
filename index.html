@@ -12,8 +12,8 @@
 	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
 	<meta name="author" content="Bev S.">
 	<link rel="canonical" href="http://www.arthurlovesplastic.com" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
@@ -48,6 +48,7 @@
     h1, h2 {
       width: 100%;
       float: left;
+      font-family: 'Open Sans', sans-serif;
     }
     h1 {
       margin-top: 100px;
@@ -79,7 +80,7 @@
     
     .pointer {
       color: #9b59b6;
-      font-family: 'Pacifico', cursive;
+      font-family: 'Open Sans', sans-serif;
       font-size: 30px;
       margin-top: 15px;
     }
@@ -121,13 +122,14 @@
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      font-weight: 100;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
       color: white;
       margin: 0;
     }
    
     .main h1.demo1 {
-      background: #1ABC9C;
+      background: #000000;
     }
     
     .reload.bell {
@@ -244,7 +246,8 @@
     }
     
     .main section.page1 {
-      background:rgb(230, 217, 200);
+      background:url(http://scontent-a-lga.cdninstagram.com/hphotos-xpf1/t51.2885-15/10471809_582893005142393_1941131935_n.jpg);
+      background-size: cover;
     }
     .main section.page1 h1 {
       text-align: left;
@@ -391,7 +394,7 @@
         <div class="page_container">
           <h1>Arthur Loves Plastic</h1>
           <h2>VIDEOS</h2>
-         <iframe width="640" height="360" src="//www.youtube.com/embed/videoseries?list=PL44B030A00436AE7B" frameborder="0" allowfullscreen></iframe>
+         <iframe width="100%" height="auto" src="//www.youtube.com/embed/videoseries?list=PL44B030A00436AE7B" frameborder="0" allowfullscreen></iframe>
           <div class="btns">
   	        <a class="reload btn" href="http://youtube.com/msarthur">Visit YouTube Channel</a>
   	      </div>
@@ -403,17 +406,7 @@
 	      <div class="page_container">
           <h1>MUSIC</h1>
           <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2447962&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-          <code class="html">
-  	        &lt;div class="main"&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          ...<br>
-  	        &lt;/div&gt;
-  	      </code>
-  	      
-  	      <code class="js">
-	          $(".main").onepage_scroll();
-	        </code>
+          
 	      </div>
       </section>
 	    
