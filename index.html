@@ -221,7 +221,26 @@
       color: black;
       background: rgba(255, 255, 255, 0.5);
     }
-    .back a {color: black}
+    /* unvisited link */
+.back a:link {
+    color: white;
+}
+
+/* visited link */
+.back a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.back a:hover {
+    color: red;
+}
+
+/* selected link */
+.back a:active {
+    color: red;
+}
+    
     header {
       position: relative;
       z-index: 10;
