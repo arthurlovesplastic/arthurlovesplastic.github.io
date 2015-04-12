@@ -410,6 +410,27 @@
 }
 .follow {width: 175px; text-align: center; margin: auto; padding: 10px;}
 .follow img {margin: 2px;}
+	.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
 	</style>
 	<script>
 	  $(document).ready(function(){
@@ -421,6 +442,9 @@
 		});
 		
 	</script>
+
+
+	
 </head>
 <body>
   <div class="wrapper">
@@ -450,8 +474,8 @@
 	    <section class="page3">
 	      <div class="page_container">
           <h1><a href="http://www.arthurlov.es"><img src="http://www.arthurlovesplastic.com/wp/wp-content/uploads/2014/08/alp_banner936_white.png" style="max-width: 500px; width: 100%;" /></a></h1>
-          <h2>Mischievous Electronica. 
-          <p><a href="http://arthurlov.es" target="blank">Read ALP's bio</a> | <a href="http://arthurlovesplastic.com/wp/" target="blank">Visit full site</a></p>
+          <h2>Mischievous Electronica 
+          <p><a class="ghost-button-semi-transparent" href="http://arthurlov.es" target="blank">Read ALP's bio</a> | <a class="ghost-button-semi-transparent" href="http://arthurlovesplastic.com/wp/" target="blank">Visit full site</a></p>
           </p><p>
   	       <strong>Contact:</strong> <a href="mailto:info@arthurlovesplastic.com">info@arthurlovesplastic.com</a>
   	      </p><p>
@@ -470,7 +494,7 @@ Email:&nbsp;<input name="email" type="text">
   	    </div>
       </section>
     </div><span class="back">
-    <a href="http://www.itunes.com/arthurlovesplastic">iTunes</a> | <a href="http://www.cdbaby.com/Artist/ArthurLovesPlastic">CDBaby</a> | <a href="http://www.amazon.com/Arthur-Loves-Plastic/e/B001LHIY40/ref=sr_ntt_srch_lnk_2?qid=1419645559&sr=8-2">Amazon</a> | <a href="https://play.google.com/store/music/artist/Arthur_Loves_Plastic?id=Ag6xwd6khdu4lkabdsfsw2aitqu">Google Play</a>
+    <a href="http://www.itunes.com/arthurlovesplastic">iTunes</a> | <a href="http://www.cdbaby.com/Artist/ArthurLovesPlastic">CDBaby</a> | <a href="http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Ddigital-music&field-keywords=arthur+loves+plastic">Amazon</a> | <a href="https://play.google.com/store/music/artist/Arthur_Loves_Plastic?id=Ag6xwd6khdu4lkabdsfsw2aitqu">Google Play</a>
   </span>  
   </div>
 </body>
