@@ -246,7 +246,6 @@
     }
     .main section .page_container {
       position: relative;
-      top: 10%;
       margin: 0 auto 0;
       max-width: 950px;
       z-index: 3;
@@ -402,6 +401,16 @@
 .ghost-button:active {
   background-color: #fff;
   color: #000;
+}
+@media (max-width: 767px) {
+.main section .page_container {
+    top: 10px;
+  }
+}
+@media (mmin-width: 768px) {
+.main section .page_container {
+    top: 10%;
+  }
 }
 	</style>
 	<script>
