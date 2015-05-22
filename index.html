@@ -447,7 +447,7 @@
 	    
 	    <section class="page2">
 	      <div class="page_container">
-	      	
+	      	<!--
 	      		<div class="cdbabybig">
 	      		
 	      		<iframe name="full" style="width:100%;height:520px;border:0px;" src="http://widget.cdbaby.com/d9ef4284-b3e3-4883-9db5-8e4f30cc4c5c/full/dark/opaque"></iframe>
@@ -456,7 +456,35 @@
 	   	<div class="cdbabysmall">
 	   		<div style="max-width:600px;max-height:785px;min-width:300px;"><div style="position: relative;height: 0;overflow: hidden;padding-bottom:100%; padding-top:200px;"><iframe name="album" style="position:absolute;top:0px;left:0px;width:100%;height:100%;border:0px;" src="http://widget.cdbaby.com/d9ef4284-b3e3-4883-9db5-8e4f30cc4c5c/album/dark/transparent"></iframe></div></div>
 	   	</div>
-	   
+	   -->
+	   <div id="player">	
+        <script>
+    (function() {
+        var script = document.createElement("script");
+
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "//sd.toneden.io/production/toneden.loader.js"
+
+        var entry = document.getElementsByTagName("script")[0];
+        entry.parentNode.insertBefore(script, entry);
+    }());
+
+    ToneDenReady = window.ToneDenReady || [];
+    ToneDenReady.push(function() {
+        // This is where all the action happens:
+        ToneDen.player.create({
+            dom: "#player",
+            eq: "bars",
+            skin: "dark",
+            tracksPerArtist: 36,
+            urls: [
+                "https://soundcloud.com/then-there-were-none/sets/then-there-were-none"
+            ]
+        });
+    });
+</script>
+</div>
          </div>
       </section>
 	    
