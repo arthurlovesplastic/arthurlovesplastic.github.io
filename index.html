@@ -459,31 +459,31 @@ background-color: #333;
 	   	</div>
 	   -->
 	   <div id="player">	
-        <script>
-    (function() {
-        var script = document.createElement("script");
+<script>
+(function() {
+var script = document.createElement("script");
 
-        script.type = "text/javascript";
-        script.async = true;
-        script.src = "//sd.toneden.io/production/toneden.loader.js"
+script.type = "text/javascript";
+script.async = true;
+script.src = "//sd.toneden.io/production/toneden.loader.js"
 
-        var entry = document.getElementsByTagName("script")[0];
-        entry.parentNode.insertBefore(script, entry);
-    }());
+var entry = document.getElementsByTagName("script")[0];
+entry.parentNode.insertBefore(script, entry);
+}());
 
-    ToneDenReady = window.ToneDenReady || [];
-    ToneDenReady.push(function() {
-        // This is where all the action happens:
-        ToneDen.player.create({
-            dom: "#player",
-            eq: "bars",
-            skin: "dark",
-            tracksPerArtist: 36,
-            urls: [
-                "https://soundcloud.com/then-there-were-none/sets/then-there-were-none"
-            ]
-        });
-    });
+ ToneDenReady = window.ToneDenReady || [];
+ ToneDenReady.push(function() {
+ // This is where all the action happens:
+ToneDen.player.create({
+ dom: "#player",
+ eq: "bars",
+ skin: "dark",
+ tracksPerArtist: 36,
+ urls: [
+"https://soundcloud.com/then-there-were-none/sets/then-there-were-none"
+ ]
+ });
+ });
 </script>
 </div>
          </div>
