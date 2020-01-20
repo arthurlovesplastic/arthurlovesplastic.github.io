@@ -14,7 +14,7 @@
 	<meta name="author" content="Bev">
 	<link rel="canonical" href="https://www.thentherewerenone.info" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" />
 
 <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
@@ -29,9 +29,7 @@
  
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <style>
-    html {
-      height: 100%;
-    }
+    
     body {
   /* Location of the image */
   background-image: url(ttwn_back.jpg);
@@ -57,10 +55,6 @@
       padding: 0;
       text-align: center;
       font-family: 'open sans';
-      position: relative;
-      margin: 0;
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
     }
     
     
@@ -83,7 +77,7 @@
       font-weight: 100;
     }
     h1 span {
-      font-size: 26px;
+      font-size: 4em;
       margin: 0 5px;
       text-transform: capitalize;
       background: rgba(0,0,0,0.85);
@@ -102,96 +96,7 @@
       margin-bottom: 10px;
     }
     
-    .pointer {
-      color: #9b59b6;
-      font-family: 'Pacifico', cursive;
-      font-size: 30px;
-      margin-top: 15px;
-    }
-    code {
-      margin: 20px 1%;
-      float: left;
-      width: 48%;
-      height: 105px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      border-radius: 5px;
-      padding:5px;
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
-      display: block;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
-    code.html {
-      color: #7EC9E6;
-    }
-    code.js {
-      color: #FFAD00;
-    }
-    .main {
-      float: left;
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    .main h1 {
-      padding:150px 50px;
-      float: left;
-      width: 100%;
-      font-size: 45px;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      font-weight: 100;
-      color: white;
-      margin: 0;
-    }
-   
-    .main h1.demo1 {
-      background: #1ABC9C;
-    }
-    
-    .reload.bell {
-      font-size: 12px;
-      padding: 20px;
-      width: 45px;
-      text-align: center;
-      height: 47px;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-    }
-    
-    .reload.bell #notification {
-      font-size: 25px;
-      line-height: 140%;
-    }
-    
-    .reload, .btn{
-      display: inline-block;
-      border: 4px solid #A2261E;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      background: #CC3126;
-      display: inline-block;
-      line-height: 100%;
-      padding: 0.7em;
-      text-decoration: none;
-      color: #fff;
-      width: 100px;
-      line-height: 140%;
-      font-size: 17px;
-      font-family: open sans;
-      font-weight: bold;
-    }
-    .reload:hover{
-      background: #444;
-    }
+
     .btn {
       width: 200px;
       color: rgb(255, 255, 255);
@@ -247,28 +152,7 @@
       background: rgba(255, 255, 255, 0.5);
     }
     
-    header {
-      position: relative;
-      z-index: 10;
-    }
-    .main section .page_container {
-      position: relative;
-      margin: 0 auto 0;
-      max-width: 950px;
-      z-index: 3;
-    }
-    .main section  {
-      overflow: hidden;
-    }
-    
-    .main section > img {
-      position: absolute;
-      max-width: 100%;
-      z-index: 1;
-    }
-    
-    
-    .main section.page1 h1 {
+    h1 {
       text-align: left;
       padding: 0;
       margin-bottom: 15px;
@@ -279,7 +163,7 @@
       font-weight: 700;
       text-transform: uppercase;
     }
-    .main section.page1 h2 {
+h2 {
      color: white;
       text-align: center;
       width: 435px;
@@ -288,63 +172,7 @@
       font-weight: 400;
       font-size: 1.15em;
     }
-    .main section .page_container .btns {
-      clear: both;
-      float: left;
-      text-align: center;
-      width: 435px;
-    }
-    .main section .page_container .btns a{
-      text-align: center;
-    }
-    .main section.page2 > img {
-      position: absolute;
-      top: -300px;
-      left: 50%;
-      margin-left: -1095px;
-    }
-    .main section.page2 .page_container {
-      overflow: hidden;
-    }
-    .main section.page2 h1 {
-      text-align: center;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 50px;
-      letter-spacing: -1px;
-      color: white;
-    }
-    .main section.page2 h2 {
-      color: rgba(255,255,255,0.85);
-      text-align: center;
-      line-height: 160%;
-      font-weight: 100;
-    }
-    .viewing-page-2 .back{
-      background: rgba(0, 0, 0, 0.25);
-      color: #FFF;
-      }
-    .main section.page3 .page_container {
-      overflow: hidden;
-      width: 500px;
-    }
-    .main section.page3 h1 {
-      text-align: center;
-      padding: 0;
-      margin-bottom: 0;
-      font-size: 1.25em;
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-    }
-    .main section.page3 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: left;
-      line-height: 160%;
-      font-weight: 400;
-      font-size: 21px;
-    }
-    
+  
     
     .soundcloud {max-width: 500px;}
     .ghost-button {
@@ -364,20 +192,16 @@ background-color: #333;
   background-color: #fff;
   color: #000;
 }
-.imgstyle {width: 100%;}
+
 @media (max-width: 767px) {
-.main section .page_container {
-    top: 1%;}
+
     .cdbabybig {display: none;}
 }
 @media (min-width: 768px) {
-.main section .page_container {
-    top: 5%;}
+
    .cdbabysmall {display: none;
   }
-      .main section.page3 .page_container {
-      margin-top: 10%;
-    }
+ 
 }
 	</style>
 	
@@ -387,20 +211,20 @@ background-color: #333;
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53f3a1e851f9e98b" async="async"></script>
 
   <<div id="fullpage">
-	  <div class="main">
+
 	    
       <div class="section">
-        <div class="page_container">
+
           <h1>Then There Were None</h1>
           <h2><img src="ttwn_bio.jpg" alt="ttwn" class="imgstyle" />From the ashes of the 80's (and the band Miserichord) came Then There Were None, a synth pop duo comprised of Bev Stanton and John Sudnik, who became <a href="https://www.washingtonpost.com/archive/lifestyle/1993/02/19/the-band-box/335a98b1-4e43-419b-99f5-cca80709e671/">darlings of the DC electronic scene</a> in the early 1990's. Sudnik's apocolyptic lyrics addressed topics such as atomic warfare, political imprisonment, and lost love with a delivery reminiscent of Joy Division's Ian Curtis. They were later joined by backing vocalist Margie Perez and guitarists Dan Syed and John Gottfried. Alas, the band is no more, but surplus product remains.
 </h2>
          
   	    </div>
   	    
-      </div>
+
 	    
 	    <div class="section">
-	      <div class="page_container">
+
 	      	<!--
 	      		<div class="cdbabybig">
 	      		
@@ -412,12 +236,11 @@ background-color: #333;
 	   	</div>
 	   -->
 	   <iframe scrolling="no" id="hearthis_at_user_" width="100%" height="550" src="https://hearthis.at/set/55812-5786719/embed/?hcolor=6699ff&autoplay=0&css=" frameborder="0" allowtransparency></iframe>
-		    
-		    </div>
+
       </div>
 	    
 	   <div class="section">
-	      <div class="page_container"><h1>Available at:</h1>
+	      <h1>Available at:</h1>
          <a class="ghost-button" href="https://www.cdbaby.com/Artist/ThenThereWereNone">CD Baby</a> 
 		      <a class="ghost-button" href="https://itunes.apple.com/us/album/then-there-were-none/id569017373">iTunes</a> 
 		      <a class="ghost-button" href="https://play.spotify.com/artist/6c3ixaw9YnBbWUGJt70XOt">Spotify</a> 
@@ -427,8 +250,8 @@ background-color: #333;
 <div class="addthis_sharing_toolbox"></div>
   	    </div>
       </div>
-    </div>
-   <div class="back"><a href="http://www.machineheart.com"><i class="fa fa-heartbeat"></i> Machine Heart Music</a> | <a href="mailto:machineheart@mindspring.com"><i class="fa fa-envelope-o"></i> Contact</a></div>
+    
+  <a href="http://www.machineheart.com"><i class="fa fa-heartbeat"></i> Machine Heart Music</a> | <a href="mailto:machineheart@mindspring.com"><i class="fa fa-envelope-o"></i> Contact</a>
    
   </div>
 	<script>
