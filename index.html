@@ -213,7 +213,7 @@ background-color: #333;
   <div id="fullpage">
 
 	    
-      <div class="section">
+      <div class="section" id="Bio">
 
           <h1>Then There Were None</h1>
           <h2><img src="ttwn_bio.jpg" alt="ttwn" class="imgstyle" />From the ashes of the 80's (and the band Miserichord) came Then There Were None, a synth pop duo comprised of Bev Stanton and John Sudnik, who became <a href="https://www.washingtonpost.com/archive/lifestyle/1993/02/19/the-band-box/335a98b1-4e43-419b-99f5-cca80709e671/">darlings of the DC electronic scene</a> in the early 1990's. Sudnik's apocolyptic lyrics addressed topics such as atomic warfare, political imprisonment, and lost love with a delivery reminiscent of Joy Division's Ian Curtis. They were later joined by backing vocalist Margie Perez and guitarists Dan Syed and John Gottfried. Alas, the band is no more, but surplus product remains.
@@ -223,7 +223,7 @@ background-color: #333;
   	    
 
 	    
-	    <div class="section">
+	    <div class="section" id="Listen">
 
 	      	<!--
 	      		<div class="cdbabybig">
@@ -239,7 +239,7 @@ background-color: #333;
 
       </div>
 	    
-	   <div class="section">
+	   <div class="section" id="Buy">
 	      <h1>Available at:</h1>
          <a class="ghost-button" href="https://www.cdbaby.com/Artist/ThenThereWereNone">CD Baby</a> 
 		      <a class="ghost-button" href="https://itunes.apple.com/us/album/then-there-were-none/id569017373">iTunes</a> 
@@ -261,7 +261,11 @@ background-color: #333;
 	//options here
 	licenseKey: '0E8D1722-2B004EC7-9817A387-361DA12B',		
 	autoScrolling:true,
-	scrollHorizontally: true
+	scrollHorizontally: true,
+	anchors: ['Bio', 'Listen', 'Buy'],        
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Bio', 'Listen', 'Buy']
 });
 
 //methods
