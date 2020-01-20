@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	 <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<title>Then There Were None</title>
 	<meta name="title" content="Then There Were None" />
 	<meta name="description" content="From the ashes of the 80&#39;s (and the band Miserichord ) came Then There Were None, a synth pop duo comprised of Bev Stanton and John Sudnik, who became darlings of the DC electronic scene in the early 1990&#39;s." />
@@ -14,9 +15,18 @@
 	<link rel="canonical" href="https://www.thentherewerenone.info" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" />
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.min.js"></script>
+
+
+<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
   
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+ 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <style>
     html {
@@ -53,12 +63,7 @@
       -webkit-font-smoothing: antialiased;
     }
     
-    .wrapper {
-    	height: 100% !important;
-    	height: 100%;
-    	margin: 0 auto; 
-    	overflow: hidden;
-    }
+    
     
     a {
       text-decoration: none;
@@ -381,10 +386,10 @@ background-color: #333;
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53f3a1e851f9e98b" async="async"></script>
 
-  <div class="wrapper">
+  <<div id="fullpage">
 	  <div class="main">
 	    
-      <section class="page1">
+      <div class="section">
         <div class="page_container">
           <h1>Then There Were None</h1>
           <h2><img src="ttwn_bio.jpg" alt="ttwn" class="imgstyle" />From the ashes of the 80's (and the band Miserichord) came Then There Were None, a synth pop duo comprised of Bev Stanton and John Sudnik, who became <a href="https://www.washingtonpost.com/archive/lifestyle/1993/02/19/the-band-box/335a98b1-4e43-419b-99f5-cca80709e671/">darlings of the DC electronic scene</a> in the early 1990's. Sudnik's apocolyptic lyrics addressed topics such as atomic warfare, political imprisonment, and lost love with a delivery reminiscent of Joy Division's Ian Curtis. They were later joined by backing vocalist Margie Perez and guitarists Dan Syed and John Gottfried. Alas, the band is no more, but surplus product remains.
@@ -392,9 +397,9 @@ background-color: #333;
          
   	    </div>
   	    
-      </section>
+      </div>
 	    
-	    <section class="page2">
+	    <div class="section">
 	      <div class="page_container">
 	      	<!--
 	      		<div class="cdbabybig">
@@ -409,9 +414,9 @@ background-color: #333;
 	   <iframe scrolling="no" id="hearthis_at_user_" width="100%" height="550" src="https://hearthis.at/set/55812-5786719/embed/?hcolor=6699ff&autoplay=0&css=" frameborder="0" allowtransparency></iframe>
 		    
 		    </div>
-      </section>
+      </div>
 	    
-	    <section class="page3">
+	   <div class="section">
 	      <div class="page_container"><h1>Available at:</h1>
          <a class="ghost-button" href="https://www.cdbaby.com/Artist/ThenThereWereNone">CD Baby</a> 
 		      <a class="ghost-button" href="https://itunes.apple.com/us/album/then-there-were-none/id569017373">iTunes</a> 
@@ -421,10 +426,21 @@ background-color: #333;
   	    <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <div class="addthis_sharing_toolbox"></div>
   	    </div>
-      </section>
+      </div>
     </div>
    <div class="back"><a href="http://www.machineheart.com"><i class="fa fa-heartbeat"></i> Machine Heart Music</a> | <a href="mailto:machineheart@mindspring.com"><i class="fa fa-envelope-o"></i> Contact</a></div>
    
   </div>
+	<script>
+		new fullpage('#fullpage', {
+	//options here
+	licenseKey: '0E8D1722-2B004EC7-9817A387-361DA12B',		
+	autoScrolling:true,
+	scrollHorizontally: true
+});
+
+//methods
+fullpage_api.setAllowScrolling(false);
+		</div>
 </body>
 </html>
